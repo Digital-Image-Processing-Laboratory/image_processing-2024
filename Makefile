@@ -1,11 +1,15 @@
 
-ENV := env
 
-REQUIREMENT:= requirement.txt
+ENV = env
 
 
-env: $(REQUIREMENT) $(ENV)
+REQUIREMENT := requirements.txt
+
+env: create_env install
+
+create_env:
 	python3 -m venv $(ENV)
 
-install: $(ENV)
+install:
 	pip install -r $(REQUIREMENT)
+
