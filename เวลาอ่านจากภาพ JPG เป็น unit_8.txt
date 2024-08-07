@@ -1,0 +1,9 @@
+Save Array ภาพลงไปใน JPG
+--------------------------
+
+32 bit float ---> ต้องทำการเปลี่ยน Data Type ก่อน
+       
+
+    1 ) Convert กลับเป็น unit 8
+  
+  - Display ไม่ได้ // Save file ไม่ได้ เพราะเราไม่ได้เปลี่ยน Data type
